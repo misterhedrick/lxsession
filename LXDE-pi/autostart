@@ -3,4 +3,4 @@
 #@xscreensaver -no-splash
 point-rpi
 @chromium-browser --start-fullscreen https://clp-web.herokuapp.com/
-@python3 /home/pi/Desktop/clp-web/src/assets/raspberry-pi/button-listener.py
+@python /home/pi/.config/lxsession/button-listener.py
