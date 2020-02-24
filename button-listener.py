@@ -25,8 +25,8 @@ print(gamepad)
 for event in gamepad.read_loop():
   if event.type == ecodes.EV_KEY:
     if event.value == 1:
-        dragTo(0, 0)
-        dragTo(1, 1)
+      dragTo(0, 0)
+      dragTo(1, 1)
       if event.code == blue1:
         print("Blue Button 1 Pressed")
         press('a')
