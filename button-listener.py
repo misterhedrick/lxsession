@@ -3,7 +3,7 @@
 from evdev import InputDevice, categorize, ecodes
 from pyautogui import press, dragTo
 gamepad = InputDevice('/dev/input/event4')
-pyautogui.FAILSAFE = false
+pyautogui.FAILSAFE = False
 #button code variables (change to suit your device)
 blue1 = 288 #a
 blue2 = 289 #b
