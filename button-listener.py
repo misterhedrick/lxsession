@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #import evdev
 from evdev import InputDevice, categorize, ecodes
-from pyautogui import press
+from pyautogui import press, dragTo
 gamepad = InputDevice('/dev/input/event4')
 
 #button code variables (change to suit your device)
@@ -25,6 +25,8 @@ print(gamepad)
 for event in gamepad.read_loop():
   if event.type == ecodes.EV_KEY:
     if event.value == 1:
+        dragTo(0, 0)
+        dragTo(1, 1)
       if event.code == blue1:
         print("Blue Button 1 Pressed")
         press('a')
