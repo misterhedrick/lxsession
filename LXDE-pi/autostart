@@ -2,5 +2,5 @@
 @pcmanfm --desktop --profile LXDE-pi
 #@xscreensaver -no-splash
 point-rpi
-@chromium-browser --start-fullscreen https://clp-web.herokuapp.com/watch
+@chromium-browser --start-fullscreen https://clp-web.herokuapp.com/watch?shownav=false
 @python /home/pi/.config/lxsession/button-listener.py
